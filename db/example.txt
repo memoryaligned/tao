@@ -1,0 +1,26 @@
+Example post:
+  Alice was a the Golden Gate Bridge with Bob.
+
+  Cathy: Wish we were there!  David: likes this.
+
+
+id: 105, otype: USER, name: Alice
+                                  \
+  (friend)   ^                     __________LOC__       id: 534, otype: LOCATION, name: Golden Gate Bridge
+     |       |                                    \
+     V    (friend)                                 \           ^     checkin
+                                                    V          |       |
+id: 244, otype: USER, name: Bob                               LOC      V
+                                 <--   TAGGED
+  (friend)   ^                        TAGGED_AT -->  id: 632, otype: CHECKIN
+     |       |
+     V    (friend) 
+
+id: 379, otype: USER, name: Cathy     <-- AUTHORED_BY
+                                 \
+  (friend)   ^                    ----------AUTHORED
+     |       |                                      \
+     V    (friend)                                   \
+                                                      V
+id: 471, otype: USER, name: David   <-- LIKED_BY --  id: 771, otype: COMMENT, text: Wish we were there!
+                                     --  LIKES  -->
