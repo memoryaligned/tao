@@ -6,8 +6,12 @@ Supported:
 
 ## Project Organization
 
-|-- etc           <- holds configuration information
-|-- scripts       <- automates processes
-|-- src           <- sql files to execute
-|-- test          <- unit tests
-|-- util          <- utility shell functions
+----------------
+
+    |-- etc           <- holds configuration information
+    |-- scripts       <- automates processes
+    |-- src           <- sql files to execute
+    |-- test          <- unit tests
+    |-- util          <- utility shell functions
+
+----------------
