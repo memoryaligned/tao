@@ -1,0 +1,9 @@
+--
+-- Delete an object
+--
+CREATE OR REPLACE FUNCTION obj_del(id NUMERIC) RETURNS VOID AS $$
+DECLARE
+BEGIN
+
+END;
+$$ LANGUAGE PLPGSQL;
