@@ -1,0 +1,9 @@
+--
+-- Get an object by an ID
+--
+CREATE OR REPLACE FUNCTION obj_get(id NUMERIC) RETURNS VOID AS $$
+DECLARE
+BEGIN
+
+END;
+$$ LANGUAGE PLPGSQL;

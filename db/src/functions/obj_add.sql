@@ -1,0 +1,13 @@
+--
+-- Add an object
+--
+CREATE OR REPLACE FUNCTION obj_add(
+    otype VARCHAR(50)
+  , kv    VARCHAR(4000)
+) RETURNS NUMERIC AS $$
+DECLARE
+BEGIN
+
+  RETURNS 0;
+END;
+$$ LANGUAGE PLPGSQL;
