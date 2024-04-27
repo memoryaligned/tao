@@ -9,8 +9,8 @@ def _get_argparse(args):
     subparsers = parser.add_subparsers(help="available subcommands")
 
     # first sub-command
-    # ACTION_parser = subparsers.add_parser("ACTION", help="ACTION commands")
-    # ACTION_parser.add_argument("-s", "--summary", action="store_true")
+    assessor_parser = subparsers.add_parser("assessor", help="Assessor commands")
+    assessor_parser.add_argument("-s", "--street-file", action="store_true")
 
     args = parser.parse_args(args)
     return args
